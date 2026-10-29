@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "platform": "auto",
+  "toolkitDir": "",
+  "nucleiTemplatesDir": "",
+  "binDirs": [],
+  "tools": {
+    "nmap": "",
+    "nuclei": "",
+    "masscan": "",
+    "fscan": "",
+    "gogo": "",
+    "suo5": "",
+    "frpc": "",
+    "frps": "",
+    "chisel": "",
+    "ffuf": "",
+    "httpx": "",
+    "dnsx": "",
+    "subfinder": "",
+    "ksubdomain": "",
+    "impacket": ""
+  },
+  "env": {
+    "FOFA_KEY": "",
+    "REDTEAM_VPS_HOST": "",
+    "REDTEAM_VPS_KEY": ""
+  },
+  "notes": "开源模板：key 与环境路径全部留空，按需自行填写",
+  "envAdaptSkip": false,
+  "envAdaptConfigured": true,
+  "updated_at": "2026-10-29T08:51:31.170Z"
+}

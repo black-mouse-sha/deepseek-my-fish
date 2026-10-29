@@ -1,0 +1,174 @@
+{
+  "note": "本仓库不分发第三方插件源码；这些插件需从 DSH 插件市场或各自上游仓库安装。",
+  "count": 28,
+  "plugins": [
+    {
+      "name": "@guowenzhang/dsh-drawioedit",
+      "version": "1.2.1",
+      "description": "Edit .drawio diagrams in the DeepSeek Harness Web Sidebar with a bundled offline draw.io editor",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-community-plugins",
+      "version": "0.4.6",
+      "description": "Community plugin index data source for the dsh web ecosystem: community.json is the single source of the Workshop store ",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-git-graph",
+      "version": "0.4.6",
+      "description": "External dsh web GUI plugin: a blank-session git branch selector + Git graph, with real host-side git operations and gua",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-market",
+      "version": "0.4.6",
+      "description": "Workshop browser card: browse skins, pets and community plugins from dsh-market.com and install them in the GUI (assets ",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-model-capabilities",
+      "version": "0.4.6",
+      "description": "Per-model capability declarations (image input and reasoning efforts) for custom pi-ai providers, edited in place on the",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-plugin-manager",
+      "version": "0.4.6",
+      "description": "Update checking for the dsh web GUI's official Plugins page: compares installed plugins against the version their regist",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-preset-center",
+      "version": "0.4.6",
+      "description": "Community agent-preset manager: the Workshop's Presets panel and the host library that installs, declares, disables and ",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-skill-explorer",
+      "version": "0.4.6",
+      "description": "DSH skill center: browse loaded skills by source (bundled / project / user / custom / runtime), enable or disable, creat",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-skin-center",
+      "version": "0.4.6",
+      "description": "In-GUI skin center for the dsh web GUI — the single skin package: skins are pure asset directories (built-in plus $DSH_H",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-task-board",
+      "version": "0.4.6",
+      "description": "Host-authoritative task board for the DSH Web GUI with real session execution, Host cron scheduling, and optional cross-",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-task-board-github",
+      "version": "0.4.6",
+      "description": "External provider extension for the dsh Web GUI task board that synchronizes GitHub Issues into the board; shipped as a ",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-web-ui-settings",
+      "version": "0.4.6",
+      "description": "Web UI plugin group for the dsh settings page: one first-level settings section that hosts the dsh-web family plugins' e",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-i18n",
+      "version": "0.4.6",
+      "description": "DSH web GUI language pack plugin: registers the Русский language into the locale catalog and centrally carries the ru di",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-liangshen",
+      "version": "0.4.6",
+      "description": "LiangShen (梁神) agent preset plus its composer lever for the dsh web GUI. The host half declares the bundled preset to th",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-pet",
+      "version": "0.4.6",
+      "description": "Multi-pet companion plugin for the dsh web GUI: a registry-driven floating pet that reacts to model activity, with per-p",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-remote-web-ui",
+      "version": "0.4.6",
+      "description": "Scan-to-pair remote access for the dsh web GUI that shares one official interface: a QR beside the settings button pairs",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-session-archive",
+      "version": "0.4.6",
+      "description": "Session archive management for DSH Web: centralized inventory, batch archive/restore, physical delete with family cascad",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-ssh",
+      "version": "0.4.6",
+      "description": "Remote SSH operations for the dsh web GUI: host config store (~/.dsh/dsh-ssh.json, import from ~/.ssh/config), a persist",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-update",
+      "version": "0.4.6",
+      "description": "Self-update plugin for the dsh web GUI: probes npm for newer family releases and runs the owning profile's pnpm update i",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-usage",
+      "version": "0.4.6",
+      "description": "Usage statistics plugin for the dsh web GUI: per-provider balance and coding-plan quota detection plus a live token usag",
+      "homepage": ""
+    },
+    {
+      "name": "@linxin666/dsh-web-all",
+      "version": "0.4.6",
+      "description": "DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board / git-graph / pet / remote-web-ui / web-ui-settings / skin-center / community-p",
+      "homepage": ""
+    },
+    {
+      "name": "dsh-context",
+      "version": "0.72.0",
+      "description": "A DeepSeek Harness plugin for context insight and management, with context dashboard and context command, for understand",
+      "homepage": "https://github.com/bowenliang123/dsh-context"
+    },
+    {
+      "name": "dsh-cost-meter",
+      "version": "1.8.34",
+      "description": "DeepSeek Harness 会话费用统计插件:本会话成本、当日费用、历史记录与官方价格同步,支持多厂商多模型价格计费(内置 170+ 模型 ID 价格目录与自动匹配)、主流 Coding Plan 订阅额度查询与显示(13 家,含 O",
+      "homepage": "https://github.com/Han-1413141/dsh-cost-meter#readme"
+    },
+    {
+      "name": "dsh-im",
+      "version": "1.0.5",
+      "description": "统一 IM 桥核心：让 DeepSeek Harness 通过 IM 可指挥、可通知、可审批（会话映射 / 命令 / 通知总线 / 审批流 / MockChannel）。",
+      "homepage": "https://github.com/shaobeichen/dsh-im-bridge"
+    },
+    {
+      "name": "dsh-purge",
+      "version": "1.1.71",
+      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐",
+      "homepage": "https://github.com/YuJunZhiXue/dsh-purge#readme"
+    },
+    {
+      "name": "dsh-purge",
+      "version": "1.1.71",
+      "description": "清洗面板（补丁/提示词/规则集/Skill）+ 右侧演练台；本仓库不含其源码，见上游 YuJunZhiXue/dsh-purge",
+      "homepage": "https://github.com/YuJunZhiXue/dsh-purge"
+    },
+    {
+      "name": "dsh-wechat",
+      "version": "0.11.0",
+      "description": "Bridge WeChat (iLink bot) to DeepSeek Harness (DSH)",
+      "homepage": ""
+    },
+    {
+      "name": "dsh-whale-widget",
+      "version": "0.4.2",
+      "description": "DSH Web 界面右下角的 DeepSeek 余额小鲸鱼挂件:余额/今日已用/峰谷定价、自定义泡泡点击序列(文本/余额/今日/峰谷/图片/随机语句与并列加权选择)、逐行样式与字体、悬浮快捷编辑、音效与每轮消耗、自定义角色/动图/音效、吸附",
+      "homepage": "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget#readme"
+    }
+  ]
+}

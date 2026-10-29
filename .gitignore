@@ -1,0 +1,16 @@
+# 凭据与私人数据：任何情况下都不提交
+.credentials.yaml
+dsh-im/
+*.dshw-usage.json
+*.dshw-turn.json
+*.dshw-size.json
+manifest.json
+*.log
+# 别人的照片与音视频
+*.jpg
+*.jpeg
+*.gif
+*.mp3
+*.wav
+# 本机路径外泄
+**/desktop-install.txt

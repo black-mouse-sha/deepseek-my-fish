@@ -1,0 +1,24 @@
+{
+  "roles": [
+    {
+      "id": "default",
+      "name": "小鲸鱼",
+      "pinnedAt": null,
+      "createdAt": 0
+    },
+    {
+      "id": "cute-girl",
+      "name": "可爱版",
+      "format": "png",
+      "pinnedAt": null,
+      "createdAt": 1792244640710
+    },
+    {
+      "id": "whale-original",
+      "name": "原版小鲸鱼",
+      "format": "png",
+      "pinnedAt": null,
+      "createdAt": 1792244640710
+    }
+  ]
+}
