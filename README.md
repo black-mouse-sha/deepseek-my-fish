@@ -228,7 +228,7 @@ deepseek-my-fish/
 
 代码与文档：[MIT](LICENSE)
 
-第三方内容（插件、POC、手册）版权归各自作者所有，本仓库只做引用与致谢。
+第三方内容（插件、POC、手册）版权归各自作者所有，本仓库只做引用与致谢 —— 详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 ---
 
