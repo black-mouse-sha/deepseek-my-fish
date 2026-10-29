@@ -60,6 +60,26 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 
 ---
 
+## 🤖 懒得动手？把包丢给智能体，让它自己装
+
+不想看命令行的话，直接把**这个仓库**（或打包好的 zip）发给你的 AI 助手，附一句话：
+
+> **「读这个仓库的 AGENT-INSTALL.md，按里面的步骤帮我装好。装之前先备份现有文件，装完按第 5 步逐项验证把结果发我。」**
+
+它会自己：
+
+1. 检查 `.dsh` 和插件根在不在
+2. 备份后复制人格文件
+3. 提示你去装 `dsh-purge` 插件
+4. **用 `tools/apply-patches.mjs` 精确打补丁**（不是那个会挑错目录的 `--apply`）
+5. 逐项验证，把结果贴给你
+
+**需要你亲手做的只有两件**：扫微信码、填 API Key。智能体会提前提醒你。
+
+完整指令见 [AGENT-INSTALL.md](AGENT-INSTALL.md)。
+
+---
+
 ## 🧠 30 秒看懂原理
 
 每轮对话，DSH 会把这几块拼成系统提示词：
@@ -83,6 +103,26 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 > 很多人把两者搞混，写了一大堆人格却不管用 —— [docs/02](docs/02-人格是怎么配的.md) 花了一整篇讲清楚为什么。
 
 ---
+
+## 🧩 哪些能直接用，哪些只是"源码/素材"
+
+仓库里有些东西**复制过去就有用**，有些**只是给人看的参考**。别混：
+
+| 内容 | 能直接用？ | 说明 |
+|---|---|---|
+| `persona/prompt-inject.md`<br>`persona/AGENTS.md`<br>`persona/rules/*.md` | ✅ **复制即生效** | 纯文本，DSH 直接读 |
+| `persona/pet.default.json`<br>`persona/whale-roles/roles.json` | ✅ 复制即生效 | JSON 状态文件 |
+| `persona/whale-roles/whale-placeholder.png` | ✅ 复制即生效 | 512×512 PNG，替换成你的图 |
+| `presets/*/agent.cordis.yml` | ⚠️ **半自动** | 需要 DSH 重启后识别，且依赖插件存在；`!!js dshHomePath(...)` 这类表达式由宿主自己求值，不能当普通 YAML 改 |
+| `presets/*/custom-bash.mjs`<br>`presets/*/tool-bootstrap.mjs`<br>`presets/*/anchor-gate.mjs` | ⚠️ **代码，不是配置** | 会被预设加载执行；改之前先读懂，别直接改名或删参数 |
+| `redteam/skills/*.md` | 📖 **只能看** | 是给智能体读的操作手册，不是可执行脚本 |
+| `redteam/pocs/*/poc.sh` `poc.py` `poc.http` | ⚠️ **片段，不能直接跑** | 里面写着 `TARGET`、`ATTACKER_HOST` 之类占位符，**必须替换成真实值**；且只在授权环境用 |
+| `redteam/config.template.json` | ⚠️ **模板** | key 全是空字符串，填了才生效 |
+| `tools/*.mjs` | ✅ 能跑 | 需要 Node.js 18+ |
+| `install.ps1` | ✅ 能跑 | Windows PowerShell 5.1 已验证 |
+| `docs/persona-architecture.html` | 📖 看图 | 浏览器打开 |
+
+**一句话**：`persona/` 是拿来用的，`redteam/` 是拿来读的，`pocs/` 是拿来改的。
 
 ## 📸 截图
 
@@ -212,8 +252,10 @@ deepseek-my-fish/
 ### 工具与素材
 
 - **[Node.js](https://nodejs.org/)** / **[Electron](https://www.electronjs.org/)** —— 宿主运行时
+- **[Archify](https://github.com/tt-a1i/archify)**（作者 **[tt-a1i](https://github.com/tt-a1i)**，MIT）—— README 里那张「这条鱼是怎么拼出来的」交互式架构图就是它画的。这个技能用起来非常舒服：写一份 JSON，它负责排版、连线、校验和导出，是我见过最省心的图解工具。
 - **[Pillow](https://python-pillow.org/)** —— 占位图与截图打码
 - **[Tabbit Browser](https://tabbit.com/)** —— 浏览器自动化，用来验证文档里的截图流程
+- **[jsDelivr](https://www.jsdelivr.com/)** —— README 图片 CDN（GitHub raw 在部分网络下加载不出）
 - 以及所有把公开 POC、操作手册整理成可读文本的安全研究者
 
 ### 关于红队目录

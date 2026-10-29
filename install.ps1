@@ -75,6 +75,31 @@ PutFile (Join-Path $Root 'persona\whale-roles\whale-placeholder.png') (Join-Path
 
 Say ""
 Say "----------------------------------------------"
+Say "  补丁单独说明："
+Say "  人格文件复制过去就会生效；但 63 项「清洗补丁」需要另外打。"
+Say "  前提是先装插件 dsh-purge（补丁定义在它里面）。"
+Say ""
+$patchNow = Read-Host "  现在就打补丁吗？(需要已装 dsh-purge) (y/N)"
+if ($patchNow -match '^[yY]') {
+  $patcher = Join-Path $Root 'tools\apply-patches.mjs'
+  if (Test-Path $patcher) {
+    Say ""
+    Say "  先干跑确认宿主路径…"
+    & node $patcher --dry --dsh-home $H
+    Say ""
+    $go = Read-Host "  路径对得上就打补丁？(y/N)"
+    if ($go -match '^[yY]') { & node $patcher --dsh-home $H }
+  } else {
+    Say "  [跳过] 缺少 tools\apply-patches.mjs"
+  }
+} else {
+  Say "  [跳过] 补丁未打。稍后可手动运行："
+  Say "         node `"$Root\tools\apply-patches.mjs`" --dry"
+  Say "         node `"$Root\tools\apply-patches.mjs`""
+}
+
+Say ""
+Say "----------------------------------------------"
 Say "  下一步："
 Say "  1) 完全退出 DeepSeek Harness（托盘也要退）"
 Say "  2) 重新打开，新开一个会话"
