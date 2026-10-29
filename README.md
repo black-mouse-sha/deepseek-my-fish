@@ -34,7 +34,7 @@ DeepSeek Harness（简称 DSH）是一个桌面 AI 客户端，默认是个「�
 **没有密钥，没有聊天记录，没有别人的照片，没有余额。**（见 [隐私说明](#-隐私说明)）
 
 <div align="center">
-<img src="docs/images/persona-face.png" width="180" alt="persona placeholder">
+<img src="https://cdn.jsdelivr.net/gh/black-mouse-sha/deepseek-my-fish@main/docs/images/persona-face.png" width="180" alt="persona placeholder">
 <br>
 <sub>仓库里带的是这张占位图 —— 换成你自己喜欢的任何一张</sub>
 </div>
@@ -66,7 +66,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 
 <div align="center">
 <a href="docs/persona-architecture.html">
-  <img src="docs/images/persona-map.png" width="900" alt="这条鱼是怎么拼出来的：两个纯文本文件 → 系统提示词 → 模型与工具">
+  <img src="https://cdn.jsdelivr.net/gh/black-mouse-sha/deepseek-my-fish@main/docs/images/persona-map.png" width="900" alt="这条鱼是怎么拼出来的：两个纯文本文件 → 系统提示词 → 模型与工具">
 </a>
 <br>
 <sub>点击查看<a href="docs/persona-architecture.html">可交互版图解</a>（支持搜索、路径高亮、导出）</sub>
@@ -87,7 +87,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 ## 📸 截图
 
 <div align="center">
-<img src="docs/images/plugins.png" width="620" alt="DSH 插件面板">
+<img src="https://cdn.jsdelivr.net/gh/black-mouse-sha/deepseek-my-fish@main/docs/images/plugins.png" width="620" alt="DSH 插件面板">
 <br>
 <sub>DSH 的插件面板：人格之外，能力靠插件堆</sub>
 </div>
