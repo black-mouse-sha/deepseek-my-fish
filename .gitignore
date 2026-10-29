@@ -14,3 +14,9 @@ manifest.json
 *.wav
 # 本机路径外泄
 **/desktop-install.txt
+
+# archify 构建缓存与回执（含本机路径）
+.archify/
+*.finalize.json
+*.finalize-summary.json
+*.browser-check.json
