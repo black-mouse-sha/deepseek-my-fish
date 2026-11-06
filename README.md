@@ -140,7 +140,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 deepseek-my-fish/
 ├── README.md                  ← 你在看的这个
 ├── install.ps1                ← 一键铺设（幂等，可重复跑）
-├── plugins.json               ← 28 个插件的清单（不含插件本体）
+├── plugins.json               ← 27 个插件的清单（不含插件本体）
 ├── persona/                   ← 🎭 人格本体
 │   ├── prompt-inject.md       ← 行为规则（核心）
 │   ├── AGENTS.md              ← 身份设定（核心）
@@ -240,14 +240,22 @@ deepseek-my-fish/
 ### 让「改造」变得可能
 
 - **[YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge)** —— 清洗面板的原创作者。本仓库**不包含**它的源码（MIT + 原始署名条款完整保留在上游），但整套「提示词分层 + 补丁管理」的思路以及我踩过的坑，都来自这个项目。特别感谢作者愿意把它公开出来，也感谢备份者在仓库下线前做了完整镜像。
-- **[@linxin666](https://github.com/linxin666)** —— `dsh-web-all` / `dsh-pet` / `dsh-ssh` / `task-board` / `remote-web-ui` / `skin-center` / `git-graph` / `market` 等一系列插件。一个人撑起了半个插件生态，很了不起。
+- **[@linxin666](https://github.com/linxin666)** —— `dsh-pet` / `dsh-ssh` / `task-board` / `remote-web-ui` / `skin-center` / `git-graph` / `market` 等一系列插件。一个人撑起了半个插件生态，很了不起。
 - **[@guowenzhang](https://github.com/guowenzhang)** —— `dsh-drawioedit`，把 Draw.io 直接搬进侧栏，画图体验极好。
 
 ### 插件
 
-完整的 28 个插件清单（名字、版本、用途、上游链接）见 [`plugins.json`](plugins.json)。包括
+完整的 27 个插件清单（名字、版本、用途、上游链接）见 [`plugins.json`](plugins.json)。包括
 `dsh-whale-widget`、`dsh-wechat`、`dsh-im`、`dsh-cost-meter`、`dsh-context` 等，
 每一位作者都值得一个 Star —— **本仓库只推荐，不搬运**。
+
+> ### ⚠️ `dsh-web-all` 已从清单移除
+>
+> 它是聚合安装器，会把 `task-board` / `git-graph` / `dsh-pet` / `skin-center` / `remote-web-ui` 等一次性装上。
+>
+> **如果你已经单独装了其中几个，再装它就会出问题**：同一套 UI 位置被两套组件同时注册，表现为面板重复、按钮错位、状态不同步、设置项互相覆盖。
+>
+> **要哪个就单独装哪个，别用全家桶。**
 
 ### 工具与素材
 

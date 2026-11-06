@@ -1,6 +1,6 @@
 {
   "note": "本仓库不分发第三方插件源码；这些插件需从 DSH 插件市场或各自上游仓库安装。",
-  "count": 28,
+  "count": 27,
   "plugins": [
     {
       "name": "@guowenzhang/dsh-drawioedit",
@@ -120,12 +120,6 @@
       "name": "@linxin666/dsh-usage",
       "version": "0.4.6",
       "description": "Usage statistics plugin for the dsh web GUI: per-provider balance and coding-plan quota detection plus a live token usag",
-      "homepage": ""
-    },
-    {
-      "name": "@linxin666/dsh-web-all",
-      "version": "0.4.6",
-      "description": "DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board / git-graph / pet / remote-web-ui / web-ui-settings / skin-center / community-p",
       "homepage": ""
     },
     {
