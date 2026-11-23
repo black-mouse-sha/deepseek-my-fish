@@ -1,6 +1,6 @@
 {
   "note": "本仓库不分发第三方插件源码；这些插件需从 DSH 插件市场或各自上游仓库安装。",
-  "count": 27,
+  "count": 28,
   "plugins": [
     {
       "name": "@guowenzhang/dsh-drawioedit",
@@ -123,6 +123,12 @@
       "homepage": ""
     },
     {
+      "name": "dsh-caveman",
+      "version": "0.2.2",
+      "description": "原始人输出风格：caveman / ultracave / megacave 三档语气，加 commit、review、help、stats、compress 与 6 个 native 工作流纪律技能。技术事实、代码、命令、路径与报错一律原样保留。14 个技能随包注册。",
+      "homepage": "https://github.com/stevenwang15/dsh-caveman"
+    },
+    {
       "name": "dsh-context",
       "version": "0.72.0",
       "description": "A DeepSeek Harness plugin for context insight and management, with context dashboard and context command, for understand",
@@ -141,15 +147,15 @@
       "homepage": "https://github.com/shaobeichen/dsh-im-bridge"
     },
     {
-      "name": "dsh-purge",
-      "version": "1.1.71",
-      "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐",
-      "homepage": "https://github.com/YuJunZhiXue/dsh-purge#readme"
+      "name": "dsh-ponytail",
+      "version": "0.2.0",
+      "description": "懒资深开发模式：每轮把「最懒但能用的方案」规则集注入系统提示词（YAGNI → 复用 → 标准库 → 原生能力 → 一行），带 /ponytail 三档切换与 6 个技能。本地 vendored，含两处 0.2.1-rc.2 兼容补丁。",
+      "homepage": "https://www.npmjs.com/package/dsh-ponytail"
     },
     {
       "name": "dsh-purge",
       "version": "1.1.71",
-      "description": "清洗面板（补丁/提示词/规则集/Skill）+ 右侧演练台；本仓库不含其源码，见上游 YuJunZhiXue/dsh-purge",
+      "description": "DeepSeek Harness 破甲 + 清洗面板：补丁、提示词、规则集、Skill 管理，右侧演练舵；让所有模型都能破甲，不同模型可换不同提示词（默认面向小码酱）。本仓库不含其源码，见上游。",
       "homepage": "https://github.com/YuJunZhiXue/dsh-purge"
     },
     {

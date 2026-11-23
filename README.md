@@ -71,7 +71,7 @@ DSH 每轮把三块拼成系统提示词：
 deepseek-my-fish/
 ├── install.ps1            一键铺设（幂等）
 ├── AGENT-INSTALL.md       给智能体的安装清单
-├── plugins.json           27 个插件清单（不含插件本体）
+├── plugins.json           28 个插件清单（不含插件本体）
 ├── persona/               人格本体：行为、身份、规则、形象
 ├── presets/               预设组合
 ├── redteam/               31 份手册 + 48 个 POC + 配置模板
@@ -133,7 +133,7 @@ deepseek-my-fish/
 - **[Pillow](https://python-pillow.org/)**——占位图与截图打码；**[Tabbit Browser](https://tabbit.com/)**——文档截图流程验证；**[jsDelivr](https://www.jsdelivr.com/)**——README 图片 CDN
 - 把公开 POC、操作手册整理成可读文本的安全研究者
 
-完整 27 个插件清单（名字、版本、用途、上游链接）见 [`plugins.json`](plugins.json)，包括 `dsh-whale-widget`、`dsh-wechat`、`dsh-im`、`dsh-cost-meter`、`dsh-context` 等，每一位作者都值得一个 Star——本仓库只推荐，不搬运。
+完整 28 个插件清单（名字、版本、用途、上游链接）见 [`plugins.json`](plugins.json)，包括 `dsh-whale-widget`、`dsh-wechat`、`dsh-im`、`dsh-cost-meter`、`dsh-context`、`dsh-ponytail`、`dsh-caveman` 等，每一位作者都值得一个 Star——本仓库只推荐，不搬运。
 
 `dsh-web-all` 已从清单移除：它是聚合安装器，会把 `task-board`、`git-graph`、`dsh-pet`、`skin-center`、`remote-web-ui` 一次性装上。已经单独装过其中几个再装它，同一套 UI 位置会被两套组件注册，表现为面板重复、按钮错位、状态不同步、设置项互相覆盖。要哪个就单独装哪个。
 
